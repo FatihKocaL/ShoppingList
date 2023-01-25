@@ -35,7 +35,7 @@
             <v-table height="50vh" fixed-header>
               <thead>
                 <tr>
-                  <th class="text-left">Id</th>
+                  <th class="text-left">Sıra</th>
                   <th class="text-left">Ürün Adı</th>
                   <th class="text-left">Ürün Fiyatı</th>
                   <th class="text-left">Satın Alındı mı ?</th>
@@ -43,8 +43,8 @@
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="item in shoppingList" :key="item.id">
-                  <td>{{ item.id }}</td>
+                <tr v-for="(item, index) in shoppingList" :key="item.id">
+                  <td>{{ index }}</td>
                   <td>{{ item.name }}</td>
                   <td>{{ item.price }}</td>
                   <td>
@@ -107,8 +107,8 @@
     </v-card>
   </v-container>
 </template>
-  
-  <script lang="ts" >
+
+<script lang="ts" >
 import { Shopping } from "@/models/Shopping";
 import { defineComponent } from "@vue/runtime-core";
 import axios from "axios";
@@ -213,7 +213,6 @@ export default defineComponent({
   },
 });
 </script>
-  
-  <style>
+
+<style>
 </style>
-  
