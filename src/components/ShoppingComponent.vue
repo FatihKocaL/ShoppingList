@@ -101,7 +101,7 @@
           </v-col>
         </v-row>
         <p style="color: red" class="text-right">
-          {{ notBuyingLength }} Adet alınacak ürün vardır.
+          {{ notBuyingLength }}: Adet alınacak ürün vardır.
         </p>
       </v-card-text>
     </v-card>
